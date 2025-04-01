@@ -1,0 +1,12 @@
+<h2 class="text-xl font-semibold text-center mb-4">Add a New Dance Course</h2>
+
+<form method="POST" action="/add-course" class="space-y-3 max-w-md mx-auto">
+  <input name="name" placeholder="Course Name" required class="w-full p-2 border rounded" />
+  <input name="duration" placeholder="Duration (e.g. 4 weeks)" required class="w-full p-2 border rounded" />
+  <input name="price" placeholder="Price (e.g. $100)" required class="w-full p-2 border rounded" />
+  <input name="datetime" type="datetime-local" required class="w-full p-2 border rounded" />
+  <input name="location" placeholder="Location (e.g. Studio A, Downtown)" required class="w-full p-2 border rounded" />
+  <textarea name="description" placeholder="Course Description" required class="w-full p-2 border rounded"></textarea>
+  
+  <button type="submit" class="bg-green-500 text-white px-4 py-2 rounded">Add Course</button>
+</form>
