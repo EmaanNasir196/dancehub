@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>{{title}}</title>
-  <link href="/css/style.css" rel="stylesheet" />
+  <title>DanceHub</title>
+  <link href="/css/global.css" rel="stylesheet" />
 </head>
 
 <body class="flex flex-col min-h-screen">
@@ -21,17 +21,17 @@
             <a href="/#courses" class="text-sm font-medium transition-colors hover:text-green-600">
                 Courses
             </a>
-            {{#isInstructor}}
+            {{#isorganisation}}
                 <a href="/add-course" class="text-sm font-medium transition-colors hover:text-green-600">
                 Add Course
                 </a>
-            {{/isInstructor}}
+            {{/isorganisation}}
             </nav>
             {{#user}}
                 <div class="flex items-center gap-4">
                 <span class="text-sm font-medium text-green-700">{{user}}</span>
                 <span class="text-sm font-medium text-green-700">
-                ({{#isInstructor}}Instructor{{/isInstructor}}{{^isInstructor}}Student{{/isInstructor}})
+                ({{#isorganisation}}organisation{{/isorganisation}}{{^isorganisation}}Student{{/isorganisation}})
                 </span>
 
 

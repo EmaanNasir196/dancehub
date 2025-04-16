@@ -13,7 +13,7 @@ exports.getSignup = (req, res) => {
     title: "Sign Up",
     body: page,
     user: req.cookies?.name || null, // Pass user name to layout
-    isInstructor: req.cookies?.role === "instructor",
+    isorganisation: req.cookies?.role === "organisation",
   });
 
   res.send(html);
@@ -22,7 +22,8 @@ exports.getSignup = (req, res) => {
 // Handle Signup Form Submission
 exports.postSignup = async (req, res) => {
   try {
-    const { name, email, password, role } = req.body;
+    const { name, email, password } = req.body;
+    const role = "student";
 
     const existingUser = await User.findUserByEmail(email);
     if (existingUser) {
@@ -48,7 +49,7 @@ exports.getLogin = (req, res) => {
     title: "Login",
     body: page,
     user: req.cookies?.name || null,
-    isInstructor: req.cookies?.role === "instructor",
+    isorganisation: req.cookies?.role === "organisation",
   });
 
   res.send(html);
@@ -81,5 +82,6 @@ exports.postLogin = async (req, res) => {
 exports.logout = (req, res) => {
   res.clearCookie("name");
   res.clearCookie("email");
+  res.clearCookie("role");
   res.redirect("/");
 };
