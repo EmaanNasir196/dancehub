@@ -12,7 +12,7 @@ DanceHub is a web platform built with Node.js, Express.js, Mustache templates, a
 
 ### 1. Clone the Repository
 
-git clone https://github.com/your-username/dancehub.git
+git clone https://github.com/EmaanNasir196/dancehub
 cd dancehub
 
 2. Install Dependencies
