@@ -1,14 +1,16 @@
 # 💃 DanceHub
 
-DanceHub is a web platform built with Node.js, Express.js, Mustache templates, and Neo4j (NeoDB) to allow organizations to manage and offer dance courses online. Students can register, explore various dance styles, and enroll in courses after purchasing them.
 
-## 🚀 Tech Stack
+A web platform for users to manage and offer dance classes online using Node.js, Express.js, Mustache templates, Latin, Neo4J (NeoDB). The student can register, explore many dance styles and enrol (among other things) courses bought on this site.
+
+
+##  Tech Stack 🚀
 
 - **Backend:** Node.js, Express.js
 - **Templating Engine:** Mustache
 - **Database:** Nedb (with Promises-based implementation)
 
-## 🔧 Setup Instructions
+## Setting Up Instructions 🔧 
 
 ### 1. Clone the Repository
 
@@ -19,21 +21,21 @@ cd dancehub
 
 `npm install`
 
-🧪 Running in Development Mode
+Development Mode Running 🧪 
 
 npm run dev
 
-This starts the development server using tools like nodemon.
+It starts the development server, using tool such as nodemon.
 
-🚀 Running in Production Mode
+ Running 🚀
 
 `npm start`
 
-Make sure to run npm install first if it’s your first time setting up.
+Then first of all, if it is a first setup, make sure you run npm install.
 
-🌱 Seeding the Database
+Seeding the Database 🌱
 
-Before starting, you may want to seed the database to create an admin user.
+You may also want to seed the database before proceeding to create an admin user.
 
 `node seed/seed.js`
 
@@ -41,13 +43,17 @@ This will create a default admin:
 `• Email: admin@dancehub.com`
 `• Password: 12345678`
 
-👥 User Roles & Features
+👥 Addiotional Features
+1. Payment Method using stripe 
+2. Secure Cookies 
+3. Protected Routes
 
-1. Admin / Organization
+4. Admin / Organization
    • Can log in and create various dance courses.
    • Manages course details (name, type, description, etc.).
-
-2. Student
+   • Generates the Student Lists
+    
+5. Student
    • Can sign up on the platform.
    • Browse and enroll in available dance courses after purchase.
 
