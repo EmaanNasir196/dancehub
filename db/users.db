@@ -1,1 +1,3 @@
 {"name":"Admin","email":"admin@dancehub.com","password":"$2b$10$4GIEKUMoThbJ2nGOaE7o1efTzVsGT0WOrV.NK7SGQt2WWHDrfjRZq","role":"organisation","_id":"ifUwZlTEvSk1CxA6"}
+{"name":"Testing","email":"testing@testing.com","password":"$2b$10$Bl1dX/cqa/m0JDCaH8Y3LOnHJifXBWETXN/FnXOfC5itWA00WZCf6","role":"student","_id":"hHgR7Zlawyvwhl8T"}
+{"name":"Test","email":"test@test.com","password":"$2b$10$eUQ9WlFvKtCGEfe1Dq.oJeIF2Z3lV2ujl4TGMMpX7gWzc87W29jBe","role":"student","_id":"5ddax4MvnWXKRbrS"}
