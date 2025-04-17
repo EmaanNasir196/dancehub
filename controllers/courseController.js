@@ -148,7 +148,7 @@ const getCourseDetail = async (req, res) => {
 
     if (!course) return res.status(404).send("Course not found");
     const currentUserEmail = req.cookies?.email;
-    const alreadyEnrolled = course.enrolled.includes(currentUserEmail);
+    const alreadyEnrolled = (course.enrolled || []).includes(currentUserEmail);
 
     const page = fs.readFileSync("views/pages/course-detail.mustache", "utf8");
     const layout = fs.readFileSync("views/layouts/main.mustache", "utf8");
